@@ -30,3 +30,9 @@ Make the migration:
 1. Go to XLTP > paste the JSON to the textarea and click the Profit! button.
 
 After this process you're done.
+
+## References:
+
+ * [xili-language on GitHub](https://github.com/dev-xiligroup/xili-language-plugin)
+ * [Polylang function reference](https://polylang.pro/doc/function-reference/)
+ 
