@@ -15,18 +15,21 @@ Before switching the plugins:
 
 Switch the plugins:
 
-1. Deactivate `xili-language` plugin.
+1. Deactivate `xili-language` (and possibly `xili-dictionary`) plugin.
 1. Install and activate `polylang` plugin.
 1. Make initial settings. In my case there was two languages:
     * Name: `suomi`, locale: `fi_FI`, slug: `fi`, flag: none (languages do not have flags)
     * Name: `svenska`, locale: `sv_SE`, slug: `sv`, flag: none
 1. Go to Languages > Settings > URL modifications
     * Choose: `The language is set from content`
-    * Choose: `Keep /language/ in pretty parmalinks
+    * Choose: `Keep /language/ in pretty parmalinks`
+1. Go to Posts > Categories
+    * Delete all categories by selecting all and using bulk action "Delete"
 
 Make the migration:
 
 1. Make sure the language codes in the JSON (sitting in your favourite text editor) equals to your Polylang slugs (in my case `fi` and `sv`). In my sample case the `xili-language` had used `sv_se` for Swedish so I had to search and replace `"sv_se"` with `"sv"`.
+1. Translate the category names in the JSON file.
 1. Go to XLTP > paste the JSON to the textarea and click the Profit! button.
 
 After this process you're done.
@@ -35,4 +38,3 @@ After this process you're done.
 
  * [xili-language on GitHub](https://github.com/dev-xiligroup/xili-language-plugin)
  * [Polylang function reference](https://polylang.pro/doc/function-reference/)
- 
